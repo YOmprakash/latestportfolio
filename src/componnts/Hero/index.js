@@ -25,8 +25,7 @@ const Hero = () => (
        </div>
         
       </div>
-      <img className='profile-img' src="https://img.freepik.com/free-photo/view-3d-businessman_23-2150709814.jpg?t=st=1703484363~exp=1703487963~hmac=ea7bf1293bd78208f7aee75848e93908c0894187b984808cd86bffd49e517f4b&w=900
-      " alt="Person" />
+      <img className='profile-img' src="https://i.postimg.cc/vB8wmVyN/image.png" alt="Person" />
 
 
     </div>
