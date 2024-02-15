@@ -7,25 +7,25 @@ const Hero = () => (
     <div className='hero-container'>
     <div className='hero-card-container'>
     <div className='hero-content'>
-       
-        <h1>FullStock Developer <img src='https://www.stefantopalovic.com/static/media/waving.1bae5fcfb51082b5c2b4.png' className='wave' alt='wave' /></h1>
-        <p>Hello, I'm Omprakash Yamavaram. Aspiring FullStock Developer </p>
-       <div className='icon-container'>
+       <h2>Hello <img src='https://www.stefantopalovic.com/static/media/waving.1bae5fcfb51082b5c2b4.png' className='wave' alt='wave' /></h2>
+        <h1>Omprakash Yamavaram </h1>
+        <p>Aspiring FullStock Developer in Nxtwave </p>
+       <div className='hero-icon-container'>
        
      
        <a href='https://www.linkedin.com/in/omprakash-yamavaram/' target="_blank" rel="noopener noreferrer">
-       <IconBrandLinkedin className='icon' color="black" width={32} height={32} />
+       <IconBrandLinkedin className='hero-icon' />
         </a>
          
        <a href='https://github.com/YOmprakash?tab=repositories' target="_blank" rel="noopener noreferrer">
-       <IconBrandGithub className='icon' color="black" width={32} height={32} />
+       <IconBrandGithub className='hero-icon'   />
         </a>
         
        
        </div>
         
       </div>
-      <img className='profile-img' src="https://i.postimg.cc/vB8wmVyN/image.png" alt="Person" />
+      <img className='profile-img' src="https://i.postimg.cc/MKM2QCQD/IMG-20240212-113102-885-modified.png" alt="Person" />
 
 
     </div>

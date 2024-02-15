@@ -13,14 +13,13 @@ const Header = () => {
   return (
     <nav className='nav-container'>
       <div className='desktop-container'>
-      <div className='logo-container'>
+     
         <Link to="home" smooth={true} duration={500} offset={-70} >
      
-          <h1>OY</h1>
+          <h1>OY.dev</h1>
         
           </Link>
-          </div>
-       
+        
       
         <div className='menu-icon' onClick={toggleHamburger}>
           {hamburger ? <IconX size={32}   className='icon-x'/> : <IconMenu2 size={32} />}

@@ -1,10 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
+    
 }
 
 .hero-container {
-  height: 100%;
-  padding: 10px 0px;
+
+  padding: 100px 0px;
+  background-color:#000000 ;
 }
 
 .hero-card-container {
@@ -19,25 +21,40 @@ body {
 
 .hero-content {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: flex-start;
     text-align: center;
-    justify-content:center;
+    flex-direction: column;
+   
+ 
     order: 2;
     width: 100%;
+    
 }
+.hero-content h2{
+    color: #3D3D3D;
+    font-size: 22px;
+    
 
-.hero-content h1 {
-    color: #315399;
-    font-size: 42px;
-    font-weight: bold;
-    line-height: 1.2
 }
+.hero-content h1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,#4285f4,#9b72cb,#d96570);
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+
+}
+    
+
 .hero-content p {
     font-weight: 500;
-  color: #222222;
-  font-family: "Mulish", sans-serif;
-  line-height: 1.6;
+    color: #fff;
+    font-family: Google Sans,Helvetica Neue,sans-serif;
+ 
+
+  font-size: 14px;
 }
 
 .hero-content a {
@@ -47,19 +64,37 @@ body {
 .profile-img {
     margin-top: 30px;
     width: 100%;
-    max-width: 200px;
-
+width: 160px;
+background-color: #fff;
+border: 6px solid #74F0ED;
+border-radius: 50%;
     order: 1;
 }
+.hero-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.hero-icon{
+    color: #000;
+    width: 30px;
+    height: 30px;
+   
+    background-color: #EA445A;
+ 
+    padding: 15px;
 
-.icon:hover{
-color:#315399;
+border-radius: 50%;
+}
+.hero-icon:hover{
+color: #fff;
 }
 
 .wave {
     width: 40px;
 }
+
 
 .about-button:hover {
     color: #ffffff;
@@ -75,29 +110,52 @@ color:#315399;
        
     }
     .hero-content {
-     
+        margin-right: 20px;
         order: 1;
-        max-width: 400px;
+        max-width: 500px;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .hero-icon-container{
+        justify-content: flex-start;
     }
  
 
     .profile-img {
        
-        max-width: 400px;
+        width: 350px;
         order: 2;
 
+    }
+    .hero-content h2{
+        font-size: 28px;
+    }
+    .hero-content h1{
+        font-size: 36px;
+    }
+    .hero-content p{
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .hero-content {
-      
-        max-width: 900px;
+        margin-right: 20px;
+        max-width: 600px;
     }
 
     .profile-img {
-        max-width: 500px;
+        width: 500px;
 
+    }
+    .hero-content h2{
+        font-size: 32px;
+    }
+    .hero-content h1{
+        font-size: 42px;
+    }
+    .hero-content p{
+        font-size: 22px;
     }
 
 }

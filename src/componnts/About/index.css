@@ -3,7 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+    background-color: #EA445A;
+    background-color: #74F0ED;
   }
   
   .about-card-container {
@@ -14,62 +16,74 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+   
   }
   
   .about-content-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+  justify-content: flex-start;
+  width: 100%;
+   max-width: 350px;
+
     padding: 20px;
    
   }
   .resume-button {
-    display:inline-block;
-    margin-top: 50px;
+    
+   
+    margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
+    font-weight: 500;
     text-decoration: none;
-    background-color: #315399; /* Set your desired background color */
-    color: #fff; /* Set the text color */
-    border: none;
+    border: 1px solid #000; 
+    background-color: transparent;/* Set your desired background color */
+    color: #000; /* Set the text color */
+    
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Add a smooth transition effect on hover */
   }
   
   .resume-button:hover {
-    background-color: #32458a; /* Change the background color on hover */
+    background-color: #000; /* Change the background color on hover */
+    color: #FFF;
   }
   
   .about-img {
     width: 100%;
-    max-width: 400px; /* Adjust the max-width as needed */
+    max-width: 350px; /* Adjust the max-width as needed */
     border-radius: 10px;
    
   }
-.about-content-container h3{
-  color: #222222;
+.about-container h3{
+  color: #000;
+  border-bottom: 2px solid #000;
+text-align: center;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 10px;
+ 
 }
 
 .about-content-container h4{
   font-size:32px;
   font-family: "Poppins", sans-serif;
- 
  margin-bottom: 10px;
+
+  
   color: #315399;
 }
 .about-content-container p{
   font-size: 18px;
   font-family: "Mulish", sans-serif;
-  color: #767676;
+  color: #000000;
+  margin-bottom: 10px;
+
   font-weight: 500;
-  line-height: 1.5;
+  
 }
   
   /* Media query for desktop responsiveness */
@@ -79,7 +93,9 @@
     }
     .about-card-container {
       flex-direction: row;
+      align-items: center;
       justify-content: space-between;
+
     }
   
     .about-img {
@@ -87,10 +103,10 @@
     }
   
     .about-content-container {
-      width: 60%;
+  
       max-width: 500px;
       align-items: flex-start;
-      text-align: left;
+     
       order: 2;
     }
   }
