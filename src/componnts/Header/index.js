@@ -16,7 +16,7 @@ const Header = () => {
      
         <Link to="home" smooth={true} duration={500} offset={-70} >
      
-          <h1>OY.dev</h1>
+          <h1>OY<span>dev.</span></h1>
         
           </Link>
         

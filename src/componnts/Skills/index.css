@@ -3,7 +3,8 @@
     align-items: center;
     flex-direction: column;
 
- 
+ height:  100%;
+ width: 100%;
     display: flex;
     padding: 50px 0px;
     background-color: #74F0ED;
@@ -45,8 +46,8 @@
   }
   
   .skills img:hover {
-    margin-bottom: 20px; /* Adjusted margin for a smoother transition */
-    transform: translateY(-5px); /* Added translation for upward movement */
+   width: 50px; /* Adjusted margin for a smoother transition */
+    transform: translateY(5px); /* Added translation for upward movement */
   }
   
   @media screen and (min-width: 768px) {

@@ -6,6 +6,10 @@
   flex-direction: column;
     background-color: #EA445A;
     background-color: #74F0ED;
+    background-color: #F5F5F5;
+    height: 100%;
+    padding: 50px 0px;
+    width: 100%;
   }
   
   .about-card-container {
@@ -41,14 +45,16 @@
     border: 1px solid #000; 
     background-color: transparent;/* Set your desired background color */
     color: #000; /* Set the text color */
-    
+    background-color: #315399; /* New button background color */
+    color: #FFF; /* New button text color */
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Add a smooth transition effect on hover */
   }
   
   .resume-button:hover {
-    background-color: #000; /* Change the background color on hover */
+    background-color: #000; 
+    background-color: #000;/* Change the background color on hover */
     color: #FFF;
   }
   
@@ -62,14 +68,14 @@
   color: #000;
   border-bottom: 2px solid #000;
 text-align: center;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
  
 }
 
 .about-content-container h4{
-  font-size:32px;
+  font-size: 24px;
   font-family: "Poppins", sans-serif;
  margin-bottom: 10px;
 
@@ -90,6 +96,7 @@ text-align: center;
   @media screen and (min-width: 768px) {
     .about-container{
       padding: 50px 0px;
+     
     }
     .about-card-container {
       flex-direction: row;
@@ -111,3 +118,15 @@ text-align: center;
     }
   }
   
+  /* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .about-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img {
+    order: 2; /* Move the image below the text on mobile */
+    margin-top: 20px;
+  }
+}

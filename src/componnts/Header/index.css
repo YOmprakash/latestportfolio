@@ -1,9 +1,4 @@
 
-
-.active{
-  background-color: #147efb;
-}
-  
   .nav-container {
     position: fixed;
    top:0;
@@ -15,9 +10,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     z-index: 1000;
   }
+
   
   .desktop-container {
     width: 90%;
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,9 +26,14 @@
     margin-left: 20px;
  
    cursor: pointer;
-    color: #EA445A;
-  font-size: 18px;
+   
+    color: #fff;
+  font-size: 24px;
     text-align: center;
+  }
+  .desktop-container h1 span{
+    color: #EA445A;
+   
   }
   .menu-icon {
     cursor: pointer;
@@ -56,8 +58,8 @@
   }
   
   .desktop-ul-container li a:hover{
-    color: #74F0ED;
-    border-bottom: #74F0ED 1px solid;
+    color: #EA445A;
+    border-bottom: #EA445A 1px solid;
   }
   
   @media screen and (max-width: 768px) {
@@ -74,12 +76,14 @@
       flex-direction: column;
       position: absolute;
       text-align: center;
-      top: 90px;
-      width: 80%;
-      background-color: #3D3D3D;
+      top: 50px;
+      left: 0px;
+      width: 90%;
+      background-color: #000;
+      height: 100vh;
       color: #fff;
       padding: 30px;
-    
+    margin-left: 0px;
       transform: translateY(-100%); /* Move the menu off-screen */
       transition: all 0.3s ease-in-out;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -89,12 +93,13 @@
     .desktop-ul-container.open {
       display: flex; /* Show the menu items when the menu is open */
       transform: translateY(0); /* Move the menu on-screen */
-    
+   
      
     }
   
     .desktop-ul-container li {
       text-align: center;
+      font-size: 24px;
     color: #fff;
      width: 100%;
      font-family: Google Sans,Helvetica Neue,sans-serif;

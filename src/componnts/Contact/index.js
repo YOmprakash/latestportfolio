@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-
+import { FaUser, FaEnvelope, FaPencilAlt } from 'react-icons/fa';
 import './index.css'
 
 const Contact = () => {
@@ -24,16 +24,14 @@ const Contact = () => {
 
   return (
     <>
-    <section id='contact' className="contact-section">
+ <section id='contact' className="contact-section">
       <h2>Get in touch</h2>
-     
-
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-         
+          <FaUser /> {/* user icon */}
           <input
             type="text"
-        placeholder='Name'
+            placeholder='Name'
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -41,7 +39,7 @@ const Contact = () => {
           />
         </div>
         <div className="form-group">
-          
+          <FaEnvelope /> {/* envelope icon */}
           <input
             type="text"
             placeholder='Subject'
@@ -52,10 +50,9 @@ const Contact = () => {
           />
         </div>
         <div className="form-group">
-         
+          <FaPencilAlt /> {/* pencil icon */}
           <textarea
-         
-         placeholder='Description'
+            placeholder='Description'
             name="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
@@ -65,9 +62,6 @@ const Contact = () => {
         </div>
         <button type="submit" className='button'>Send Message</button>
       </form>
-     
- 
- 
     </section>
     </>
   );

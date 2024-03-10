@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPlay, FaShoppingCart, FaBriefcase } from 'react-icons/fa';
 import './index.css';
 
 
@@ -11,7 +12,7 @@ const Project = () => {
     
       <div className='work'>
        <div className='work__content'>
-         <h3 className='work__header-three'>Nxt Watch</h3>
+       <h3 className='work__header-three'><FaPlay /> Nxt Watch</h3> 
          <p className='work__paragraph'>Developed the Nxt Watch platform, a YouTube-inspired application where users
 can access various video categories, such as Trending, Gaming, and Saved videos,</p>
          <div className='btn-container'>
@@ -22,9 +23,9 @@ can access various video categories, such as Trending, Gaming, and Saved videos,
      
       
        <div className='work__content'>
-         <h3 className='work__header-three'>Nxt Trendz ( ECommerce Clone - Amazon,
+       <h3 className='work__header-three'><FaShoppingCart /> Nxt Trendz ( ECommerce Clone - Amazon,
 Flipkart)
-</h3>
+</h3> 
          <p className='work__paragraph'>Implemented Nxt Trendz application which is a clone for ECommerce applications
 like Amazon, Flipkart.</p>
          <div className='btn-container'>
@@ -34,7 +35,7 @@ like Amazon, Flipkart.</p>
      
        
        <div className='work__content'>
-         <h3 className='work__header-three'>Jobby App</h3>
+       <h3 className='work__header-three'><FaBriefcase /> Jobby App</h3>
          <p className='work__paragraph'>Implemented Jobby App where users can log in and can see a list of jobs with
 search by Job title, filters based on Salary range and Employment type, etc</p>
          <div className='btn-container'>
