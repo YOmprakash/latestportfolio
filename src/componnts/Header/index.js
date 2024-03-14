@@ -11,47 +11,34 @@ const Header = () => {
   };
 
   return (
-    <nav className='nav-container'>
-      <div className='desktop-container'>
-     
-        <Link to="home" smooth={true} duration={500} offset={-70} >
-     
+    <nav className="nav">
+
+      <div className="nav-header">
+        <Link to="home" smooth={true} duration={500} offset={-70}>
           <h1>OY<span>dev.</span></h1>
-        
-          </Link>
-        
-      
-        <div className='menu-icon' onClick={toggleHamburger}>
-          {hamburger ? <IconX size={32}   className='icon-x'/> : <IconMenu2 size={32} />}
+        </Link>
+        <div className='nav-menu' onClick={toggleHamburger}>
+          {hamburger ? <IconX size={32}  /> : <IconMenu2 size={32} className='menu-icon' />}
         </div>
-        <ul className={`desktop-ul-container ${hamburger ? 'open' : ''}`}>
-        <li>
-            <Link to="home" smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="skills" smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link to="about" smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="projects" smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="contact" smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-              Contact
-            </Link>
-          </li>
-        </ul>
       </div>
+      <div className={`nav-links ${hamburger ? 'active' : ''}`}>
+        <Link to="home" activeClass='active' smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
+          Home
+        </Link>
+        <Link to="skills" activeClass='active' smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
+          Skills
+        </Link>
+        <Link to="about" activeClass='active' smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
+          About
+        </Link>
+        <Link to="projects" activeClass='active'smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
+          Projects
+        </Link>
+        <Link to="contact" activeClass='active'smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
+          Contact
+        </Link>
+      </div>
+   
     </nav>
   );
 };
