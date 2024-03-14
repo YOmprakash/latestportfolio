@@ -1,111 +1,111 @@
 
-  .nav-container {
-    position: fixed;
-   top:0;
-   left: 0;
-    padding: 10px;
-    width: 100%;
-    transition: transform 0.3s ease-in-out;
-    background-color:#000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    z-index: 1000;
-  }
+.nav-container {
+  position: fixed;
+ top:0;
+ left: 0;
+  padding: 10px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  background-color:#000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+}
 
+
+.desktop-container {
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.desktop-container h1{
   
-  .desktop-container {
-    width: 90%;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  margin-left: 20px;
 
-
-  .desktop-container h1{
-    
-    margin-left: 20px;
+ cursor: pointer;
  
-   cursor: pointer;
-   
-    color: #fff;
-  font-size: 24px;
-    text-align: center;
-  }
-  .desktop-container h1 span{
-    color: #EA445A;
-   
-  }
+  color: #fff;
+font-size: 24px;
+  text-align: center;
+}
+.desktop-container h1 span{
+  color: #EA445A;
+ 
+}
+.menu-icon {
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  
+
+}
+
+.desktop-ul-container {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.desktop-ul-container li {
+  cursor: pointer;
+  color: #fff;
+font-weight: 400;
+  font-family: Helvetica ,sans-serif;
+  
+}
+
+.desktop-ul-container li a:hover{
+  color: #EA445A;
+  border-bottom: #EA445A 1px solid;
+}
+
+@media screen and (max-width: 768px) {
   .menu-icon {
-    cursor: pointer;
-    display: none;
-    color: #fff;
-    
-  
+    display: block; 
   }
-  
-  .desktop-ul-container {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-  }
-  
-  .desktop-ul-container li {
-    cursor: pointer;
-    color: #fff;
-  font-weight: 400;
-    font-family: Helvetica ,sans-serif;
-    
-  }
-  
-  .desktop-ul-container li a:hover{
-    color: #EA445A;
-    border-bottom: #EA445A 1px solid;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .menu-icon {
-      display: block; 
-    }
 
 
 .menu-icon:hover{
-  color: #147efb;
-  transition: all 0.3s;
+color: #147efb;
+transition: all 0.3s;
 }
-    .desktop-ul-container {
-      flex-direction: column;
-      position: absolute;
-      text-align: center;
-      top: 50px;
-      left: 0px;
-      width: 90%;
-      background-color: #000;
-      height: 100vh;
-      color: #fff;
-      padding: 30px;
-    margin-left: 0px;
-      transform: translateY(-100%); /* Move the menu off-screen */
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      display: none; /* Initially hide the menu items on mobile */
-    }
-  
-    .desktop-ul-container.open {
-      display: flex; /* Show the menu items when the menu is open */
-      transform: translateY(0); /* Move the menu on-screen */
-   
-     
-    }
-  
-    .desktop-ul-container li {
-      text-align: center;
-      font-size: 24px;
+  .desktop-ul-container {
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 0px;
+    width: 90%;
+    background-color: #000;
+    height: 100vh;
     color: #fff;
-     width: 100%;
-     font-family: Google Sans,Helvetica Neue,sans-serif;
-      margin-bottom: 10px; /* Add margin-bottom to create space between list items */
-    }
-
-
-
+    padding: 30px;
+  margin-left: 0px;
+    transform: translateY(-100%); /* Move the menu off-screen */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hide the menu items on mobile */
   }
+
+  .desktop-ul-container.open {
+    display: flex; /* Show the menu items when the menu is open */
+    transform: translateY(0); /* Move the menu on-screen */
+ 
+   
+  }
+
+  .desktop-ul-container li {
+    text-align: center;
+    font-size: 24px;
+  color: #fff;
+   width: 100%;
+   font-family: Google Sans,Helvetica Neue,sans-serif;
+    margin-bottom: 10px; /* Add margin-bottom to create space between list items */
+  }
+
+
+
+}
