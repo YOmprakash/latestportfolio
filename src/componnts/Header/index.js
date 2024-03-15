@@ -1,46 +1,72 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import { IconMenu2, IconX } from "@tabler/icons-react";
-import { Link } from 'react-scroll';
-import './index.css';
+import "./index.css";
 
-const Header = () => {
+
+const Header  = () =>  {
   const [hamburger, setHamburger] = useState(false);
 
-  const toggleHamburger = () => {
+  const hamburgerMenu = () => {
     setHamburger(!hamburger);
   };
 
-  return (
-    <nav className="nav">
+  const pageUp = () => {
+    window.scrollTo({ top: (0, 0), behavior: "smooth" });
+  };
 
-      <div className="nav-header">
-        <Link to="home" smooth={true} duration={500} offset={-70}>
-          <h1>OY<span>dev.</span></h1>
-        </Link>
-        <div className='nav-menu' onClick={toggleHamburger}>
-          {hamburger ? <IconX size={32}  /> : <IconMenu2 size={32} className='menu-icon' />}
-        </div>
+  const navlinks = [
+    {
+      name: "Home",
+      link: "#home",
+    },
+    {
+      name: "About",
+      link: "#about",
+    },
+    {
+      name: "Projects",
+      link: "#projects",
+    },
+    {
+      name: "Contact",
+      link: "#contact",
+    },
+  ];
+
+  return (
+    <>
+      <nav>
+        <h3 onClick={pageUp} className="logo">
+          Stefan.dev
+        </h3>
+        <ul >
+          {navlinks.map((item) => (
+            <li key={item.name}>
+              <a className="desk-a" href={item.link}>{item.name}</a>
+            </li>
+          ))}
+          <li onClick={() => hamburgerMenu()}>
+            <IconMenu2 className="mobile-menu" width={30} height={30} />
+          </li>
+        </ul>
+      </nav>
+
+      {/* mobile nav */}
+      <div className={`mobile-nav ${hamburger ? "open-menu" : "closed-menu"}`}>
+        <span onClick={() => hamburgerMenu()}>
+          <IconX width={30} height={30} />
+        </span>
+
+        <ul>
+          {navlinks.map((item) => (
+            <li key={item.name} onClick={() => hamburgerMenu()}>
+              <a href={item.link}>{item.name}</a>
+            </li>
+          ))}
+        </ul>
       </div>
-      <div className={`nav-links ${hamburger ? 'active' : ''}`}>
-        <Link to="home" activeClass='active' smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-          Home
-        </Link>
-        <Link to="skills" activeClass='active' smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-          Skills
-        </Link>
-        <Link to="about" activeClass='active' smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-          About
-        </Link>
-        <Link to="projects" activeClass='active'smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-          Projects
-        </Link>
-        <Link to="contact" activeClass='active'smooth={true} duration={500} offset={-70} onClick={toggleHamburger}>
-          Contact
-        </Link>
-      </div>
-   
-    </nav>
+    </>
   );
-};
+}
 
 export default Header;
