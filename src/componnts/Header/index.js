@@ -10,62 +10,57 @@ const Header  = () =>  {
     setHamburger(!hamburger);
   };
 
-  const pageUp = () => {
-    window.scrollTo({ top: (0, 0), behavior: "smooth" });
-  };
 
-  const navlinks = [
-    {
-      name: "Home",
-      link: "#home",
-    },
-    {
-      name: "About",
-      link: "#about",
-    },
-    {
-      name: "Projects",
-      link: "#projects",
-    },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
-  ];
 
   return (
-    <>
-      <nav>
-        <h3 onClick={pageUp} className="logo">
-          Stefan.dev
-        </h3>
-        <ul >
-          {navlinks.map((item) => (
-            <li key={item.name}>
-              <a className="desk-a" href={item.link}>{item.name}</a>
-            </li>
-          ))}
-          <li onClick={() => hamburgerMenu()}>
-            <IconMenu2 className="mobile-menu" width={30} height={30} />
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__content">
 
-      {/* mobile nav */}
-      <div className={`mobile-nav ${hamburger ? "open-menu" : "closed-menu"}`}>
-        <span onClick={() => hamburgerMenu()}>
-          <IconX width={30} height={30} />
-        </span>
-
-        <ul>
-          {navlinks.map((item) => (
-            <li key={item.name} onClick={() => hamburgerMenu()}>
-              <a href={item.link}>{item.name}</a>
+          
+          <span class="header__title">OYdev.</span>
+    
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link"> Home </a>
             </li>
-          ))}
-        </ul>
+            <li class="header__link-wrapper">
+              <a href="./#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projects" class="header__link"> Projects </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont"  onClick={hamburgerMenu}>
+           {hamburger ? <IconX size={32} />:<IconMenu2 size={32}/> }
+          </div>
+        </div>
       </div>
-    </>
+      <div class={`header__sm-menu ${hamburger ? "header__sm-menu--active" :""}`}>
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link" onClick={hamburgerMenu}>
+              <a href="./"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link"  onClick={hamburgerMenu}>
+              <a href="./#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link"  onClick={hamburgerMenu}>
+              <a href="./#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link"  onClick={hamburgerMenu}>
+              <a href="./#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
   );
 }
 

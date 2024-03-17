@@ -35,7 +35,7 @@
   }
   .resume-button {
     
-   
+    font-family: 'Sans Serif';
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
@@ -71,12 +71,13 @@ text-align: center;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: 'Sans Serif';
  
 }
 
 .about-content-container h4{
   font-size: 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
  margin-bottom: 10px;
 
   
@@ -84,7 +85,7 @@ text-align: center;
 }
 .about-content-container p{
   font-size: 18px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Sans Serif';
   color: #000000;
   margin-bottom: 10px;
 
