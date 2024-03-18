@@ -4,15 +4,20 @@
   display: flex;
   flex-direction: column;
 
-
-  background-color: #000;
+justify-content: center;
+  padding: 3rem 0;
+  background-color: #4831d4;
   font-family: sans-serif;
  
 
 }
 .heading-secondary{
-  color: #ffffff;
-  margin:30px 0px;
+  color: #ccf381;
+
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 900;
+
   text-align: center;
  
 
@@ -27,11 +32,10 @@
   flex-wrap: wrap;
   margin-bottom: 10rem;
 }
+ 
+.card {
+  
 
-.work__content {
-  background-color: #fff;
-  padding: 10px;
-  box-shadow: 0 4rem 7rem rgba(0,0,0,.3);
   display: flex;
   width: 100%;
   height: 350px;
@@ -41,11 +45,50 @@
   justify-content: center;
  text-align: center;
   flex-direction: column;
- 
+  border: 8px solid #fff;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
  
 }
 
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  transition: all 0.8s;
+  opacity: 0;
+}
+.card-body h1{
+  color: #fff;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+.card:hover .card-body{
+opacity: 1;
+}
+.card-btn-container{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+
+}
 
   @media screen and  (min-width: 768px){
   
@@ -57,7 +100,7 @@
       
         
     }
-    .work__content{
+    .card{
      
       width: 300px;
     }
@@ -65,10 +108,11 @@
   
 
 .work__header-three {
-  color: #1b2025;
+  color: #3d155f;
   line-height: 1.33;
   font-family: sans-serif;
   font-size:22px;
+  font-weight: 600;
 }
 .work__paragraph {
   color: #5d5d5d; /* Lighter shade of grey for better readability */
@@ -89,11 +133,11 @@
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  color: #fff !important;
+  color: #4831d4 !important;
   transition: all .2s;
   font-size: 12px;
-  border: none;
-  background-color: #EA445A;
+ height: 24px;
+ width: 24px;
   cursor: pointer;
 }
 

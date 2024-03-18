@@ -35,7 +35,7 @@ const Header  = () =>  {
             </li>
           </ul>
           <div class="header__main-ham-menu-cont"  onClick={hamburgerMenu}>
-           {hamburger ? <IconX size={32} />:<IconMenu2 size={32}/> }
+           {hamburger ? <IconX size={32} color='#4831d4' />:<IconMenu2 size={32} color='#4831d4' /> }
           </div>
         </div>
       </div>

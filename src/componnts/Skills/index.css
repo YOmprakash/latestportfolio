@@ -1,34 +1,37 @@
 .skills {
-   
+   display: flex;
+   justify-content: center;
     align-items: center;
     flex-direction: column;
 
  height:  100%;
  width: 100%;
-    display: flex;
-    padding: 50px 0px;
-    background-color: #74F0ED;
-    background-color: #EA445A;
+ padding: 5rem 0;
+    background-color: #ccf381;
   
   
   }
   .skills h1{
-    color: #000;
-    border-bottom: 2px solid #000;
+    color: #4831d4;
+    font-size: 26px;
+    border-bottom: 2px solid #4831d4;
     padding-bottom: 4px;
-    font-family: 'Sans Serif';
+    font-weight: 900;
+    font-family:sans-serif;
         
   }
   .skills ul {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
   }
   .skills li {
     list-style: none;
    
     margin: 10px;
-    
+    width: 50px;
+    height: 50px;
     
     
   
@@ -36,18 +39,20 @@
   }
   
   .skills img {
-    width: 40px;
-    border-radius: 20px;
-    padding: 10px;
-    transition: margin-bottom 0.5s ease-in-out;
-    box-shadow: 5px 5px 5px,rgba(255, 255, 255, 0.5);
-    background-color: #3D3D3D;
- /* Added transition property */
+ width: 100%;
+   margin: 10px;
+   
+   
+   
+   
+ 
   }
   
   .skills img:hover {
-   width: 50px; /* Adjusted margin for a smoother transition */
-    transform: translateY(5px); /* Added translation for upward movement */
+   width: 70px;
+ 
+  
+  /* Added translation for upward movement */
   }
   
   @media screen and (min-width: 768px) {

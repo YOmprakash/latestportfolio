@@ -1,50 +1,44 @@
 import React from 'react';
-import { FaPlay, FaShoppingCart, FaBriefcase } from 'react-icons/fa';
+import { FaPlay, FaGithub } from 'react-icons/fa';
 import './index.css';
-
-
-
 
 const Project = () => {
   return(
     <div id ='projects' className='project-container'>
-    <h2 className='heading-secondary'>MY PROJECTS</h2>
-    
+      <h2 className='heading-secondary'>MY PROJECTS</h2>
       <div className='work'>
-       <div className='work__content'>
-       <h3 className='work__header-three'><FaPlay /> Nxt Watch</h3> 
-         <p className='work__paragraph'>Developed the Nxt Watch platform, a YouTube-inspired application where users
-can access various video categories, such as Trending, Gaming, and Saved videos,</p>
-         <div className='btn-container'>
-          <a href='https://omprkashnxt63.ccbp.tech/' target='__blank' className='work__btn btn buttons'>View Project</a>
-         </div>
-       </div>
-    
-     
-      
-       <div className='work__content'>
-       <h3 className='work__header-three'><FaShoppingCart /> Nxt Trendz ( ECommerce Clone - Amazon,
-Flipkart)
-</h3> 
-         <p className='work__paragraph'>Implemented Nxt Trendz application which is a clone for ECommerce applications
-like Amazon, Flipkart.</p>
-         <div className='btn-container'>
-          <a href='https://prakashtrendz.ccbp.tech/' target='__blank' className='work__btn btn buttons'>View Project</a>
-         </div>
-       </div>
-     
-       
-       <div className='work__content'>
-       <h3 className='work__header-three'><FaBriefcase /> Jobby App</h3>
-         <p className='work__paragraph'>Implemented Jobby App where users can log in and can see a list of jobs with
-search by Job title, filters based on Salary range and Employment type, etc</p>
-         <div className='btn-container'>
-          <a href='https://prakashjobby1.ccbp.tech/' target='__blank' className='work__btn btn buttons'>View Project</a>
-         </div>
-       </div>
-     </div>
-     
-</div>
+        <div className='card'>
+          <img src='https://i.postimg.cc/xdLYL83s/Screenshot-2024-03-18-131607.png' alt='insta share' className='project-image'/>
+          <div className='card-body'>
+            <h1>Insta Share</h1>
+            <div className='card-btn-container'>
+              <a href='https://github.com/YOmprakash/InstaShare.git' target='_blank' rel='noopener noreferrer'><FaGithub size={24} color='#fff'/></a>
+              <a href='https://prakashinsta63.ccbp.tech' target='_blank' rel='noopener noreferrer'><FaPlay  size={24} color='#fff'/></a>
+            </div>
+          </div>
+        </div>
+        <div className='card'>
+          <img src='https://i.postimg.cc/bvrXTj2t/Screenshot-2024-03-18-133754.png' alt='Jobby app' className='project-image'/>
+          <div className='card-body'>
+            <h1>Jobby App</h1>
+            <div className='card-btn-container'>
+              <a href='https://github.com/YOmprakash/jobbyappkj.git' target='_blank' rel='noopener noreferrer'><FaGithub size={24} color='#fff'/></a>
+              <a href='https://prakashjobby1.ccbp.tech' target='_blank' rel='noopener noreferrer'><FaPlay  size={24} color='#fff'/></a>
+            </div>
+          </div>
+        </div>
+        <div className='card'>
+          <img src='https://i.postimg.cc/LsfxpHwf/Screenshot-2024-03-18-134539.jpg' alt='nxttrendz' className='project-image'/>
+          <div className='card-body'>
+            <h1>Nxt Trendz</h1>
+            <div className='card-btn-container'>
+              <a href='https://prakahnxtrenz6.ccbp.tech/' target='_blank' rel='noopener noreferrer'><FaGithub size={24} color='#fff'/></a>
+              <a href='https://prakahnxtrenz6.ccbp.tech' target='_blank' rel='noopener noreferrer'><FaPlay  size={24} color='#fff'/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 

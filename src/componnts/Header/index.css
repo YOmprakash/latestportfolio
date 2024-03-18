@@ -2,12 +2,10 @@
 
 .header {
   position: fixed;
-
   width: 100%;
   z-index: 1000;
+  background-color: #fff;
   
-  background: #000;
-  box-shadow: 0 10px 100px rgba(0,0,0,0.1)
 }
 
 .header__content {
@@ -27,25 +25,12 @@
 .header__title {
   
   cursor: pointer;
-  color: #E00105;
+  color: #4831d4;
  font-size: 22px;
+ font-weight: 900;
  font-family:sans-serif;
 }
 
-.header__title:hover{
-  color: #EA4454;
-  padding-bottom: 3px;
-  border-bottom: 3px solid #EA4454;
-}
-
-
-
-.header__logo-sub {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px
-}
 
 .header__links {
   display: flex;
@@ -62,17 +47,20 @@ list-style:none;
 .header__link {
  
 text-decoration: none;
-  font-size: 22px;
-  color: #fff;
-
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #4831d4;
+font-weight: 400;
 
   
 }
 
 .header__link:hover {
-  color: #EA4454;
-  padding-bottom: 3px;
-  border-bottom: 3px solid #EA4454;
+  color: #4831d4;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #4831d4;
+
 }
 
 @media  screen and (max-width: 768px) {
@@ -133,7 +121,7 @@ text-decoration: none;
   text-decoration: none;
   padding: 2rem 0;
   font-size: 22px;
-  color: #333;
+  color: #4831d4;
   text-align: left;
   border-bottom: 1px solid #eee;
   font-weight: 700;
@@ -141,7 +129,5 @@ text-decoration: none;
 
 }
 
-.header__sm-menu-link a:hover {
-  color: #7843E9
-}
+
 

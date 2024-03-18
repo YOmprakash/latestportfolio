@@ -4,9 +4,7 @@
     justify-content: center;
     align-items: center;
   flex-direction: column;
-    background-color: #EA445A;
-    background-color: #74F0ED;
-    background-color: #F5F5F5;
+    background-color: #F9F9F9;
     height: 100%;
     padding: 50px 0px;
     width: 100%;
@@ -27,6 +25,7 @@
     display: flex;
     flex-direction: column;
   justify-content: flex-start;
+  text-align: left;
   width: 100%;
    max-width: 350px;
 
@@ -35,27 +34,28 @@
   }
   .resume-button {
     
-    font-family: 'Sans Serif';
+    font-family:sans-serif;
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
     font-weight: 500;
     text-decoration: none;
-    border: 1px solid #000; 
-    background-color: transparent;/* Set your desired background color */
-    color: #000; /* Set the text color */
-    background-color: #315399; /* New button background color */
-    color: #FFF; /* New button text color */
-    border-radius: 4px;
+    border: 1px solid #4831d4; 
+    background-color: transparent;
+    color: #4831d4 ;
+    
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Add a smooth transition effect on hover */
+  
   }
   
   .resume-button:hover {
-    background-color: #000; 
-    background-color: #000;/* Change the background color on hover */
+    background-color: #4831d4;
+  
     color: #FFF;
+    border: none;
+    outline: none;
+  
   }
   
   .about-img {
@@ -65,31 +65,31 @@
    
   }
 .about-container h3{
-  color: #000;
-  border-bottom: 2px solid #000;
+  color: #4831d4;
+  border-bottom: 2px solid #4831d4;
 text-align: center;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
-  font-family: 'Sans Serif';
+  font-family: sans-serif;
  
 }
 
-.about-content-container h4{
+.about-content-container h1{
   font-size: 24px;
   font-family: sans-serif;
  margin-bottom: 10px;
-
+font-weight: 600;
   
-  color: #315399;
+  color: #4831d4;
 }
 .about-content-container p{
-  font-size: 18px;
-  font-family: 'Sans Serif';
-  color: #000000;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #3d155f;
   margin-bottom: 10px;
 
-  font-weight: 500;
+  font-weight: 400;
   
 }
   
@@ -112,7 +112,7 @@ text-align: center;
   
     .about-content-container {
   
-      max-width: 500px;
+      max-width: 600px;
       align-items: flex-start;
      
       order: 2;

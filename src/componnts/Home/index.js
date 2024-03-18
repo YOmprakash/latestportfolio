@@ -19,8 +19,9 @@ const Home = () => (
 <div id="home" className='home-container'>
 <Header />
     <Hero />
-    <Skills />
+
     <About />
+    <Skills />
     <Projects/>
     <Contact/>
    <Footer/>
