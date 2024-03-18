@@ -12,8 +12,8 @@ const Project = () => {
           <div className='card-body'>
             <h1>Insta Share</h1>
             <div className='card-btn-container'>
-              <a href='https://github.com/YOmprakash/InstaShare.git' target='_blank' rel='noopener noreferrer'><FaGithub size={24} color='#fff'/></a>
-              <a href='https://prakashinsta63.ccbp.tech' target='_blank' rel='noopener noreferrer'><FaPlay  size={24} color='#fff'/></a>
+              <a href='https://github.com/YOmprakash/InstaShare.git' target='_blank' rel='noopener noreferrer'><FaGithub size={24} className='p-btn'/></a>
+              <a href='https://prakashinsta63.ccbp.tech' target='_blank' rel='noopener noreferrer'><FaPlay  size={24} className='p-btn'/></a>
             </div>
           </div>
         </div>
@@ -22,8 +22,8 @@ const Project = () => {
           <div className='card-body'>
             <h1>Jobby App</h1>
             <div className='card-btn-container'>
-              <a href='https://github.com/YOmprakash/jobbyappkj.git' target='_blank' rel='noopener noreferrer'><FaGithub size={24} color='#fff'/></a>
-              <a href='https://prakashjobby1.ccbp.tech' target='_blank' rel='noopener noreferrer'><FaPlay  size={24} color='#fff'/></a>
+              <a href='https://github.com/YOmprakash/jobbyappkj.git' target='_blank' rel='noopener noreferrer'><FaGithub size={24} className='p-btn'/></a>
+              <a href='https://prakashjobby1.ccbp.tech' target='_blank' rel='noopener noreferrer'><FaPlay  className='p-btn' size={24} /></a>
             </div>
           </div>
         </div>
@@ -32,8 +32,8 @@ const Project = () => {
           <div className='card-body'>
             <h1>Nxt Trendz</h1>
             <div className='card-btn-container'>
-              <a href='https://prakahnxtrenz6.ccbp.tech/' target='_blank' rel='noopener noreferrer'><FaGithub size={24} color='#fff'/></a>
-              <a href='https://prakahnxtrenz6.ccbp.tech' target='_blank' rel='noopener noreferrer'><FaPlay  size={24} color='#fff'/></a>
+              <a href='https://prakahnxtrenz6.ccbp.tech/' target='_blank' rel='noopener noreferrer'><FaGithub size={24} className='p-btn'/></a>
+              <a href='https://prakahnxtrenz6.ccbp.tech' target='_blank' rel='noopener noreferrer'><FaPlay  size={24} className='p-btn'/></a>
             </div>
           </div>
         </div>

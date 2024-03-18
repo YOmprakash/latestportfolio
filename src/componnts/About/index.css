@@ -6,7 +6,7 @@
   flex-direction: column;
     background-color: #F9F9F9;
     height: 100%;
-    padding: 50px 0px;
+    padding:5rem 0;
     width: 100%;
   }
   
@@ -39,19 +39,24 @@
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
+    font-family: sans-serif;
     font-weight: 500;
     text-decoration: none;
-    border: 1px solid #4831d4; 
-    background-color: transparent;
+    background: linear-gradient(to right, #4831d4 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
     color: #4831d4 ;
-    
+    border: #4831d4 solid 2px;
+    align-self: center;
     cursor: pointer;
+  border-radius: 2px;
   
   }
   
   .resume-button:hover {
-    background-color: #4831d4;
-  
+    
+    background-position: left bottom;
     color: #FFF;
     border: none;
     outline: none;
@@ -105,7 +110,9 @@ font-weight: 600;
       justify-content: space-between;
 
     }
-  
+  .resume-button{
+    align-self: flex-start;
+  }
     .about-img {
       order: 1; /* Move the image to the right on desktop */
     }

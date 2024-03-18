@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IconMenu2, IconX } from "@tabler/icons-react";
+import { Link } from 'react-scroll';
 import "./index.css";
 
 
@@ -16,22 +17,25 @@ const Header  = () =>  {
     <header class="header">
       <div class="header__content">
 
-          
+      <Link to="home" smooth={true} duration={500} offset={-70} >
           <span class="header__title">OYdev.</span>
-    
+    </Link>
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./" class="header__link"> Home </a>
+            <Link to="home" smooth={true} duration={500} offset={-70} className="header__link"> Home </Link>
             </li>
             <li class="header__link-wrapper">
-              <a href="./#about" class="header__link">About </a>
+            <Link to="about" smooth={true} duration={500} offset={-90}className="header__link" >About </Link>
+            </li>
+            <li className="header__link-wrapper">
+            <Link to="skills" smooth={true} duration={500} offset={-100}className="header__link">Skills</Link>
             </li>
             <li class="header__link-wrapper">
-              <a href="./#projects" class="header__link"> Projects </a>
+            <Link to="projects" smooth={true} duration={500} offset={-70}className="header__link"> Projects </Link>
             </li>
             <li class="header__link-wrapper">
-              <a href="./#contact" class="header__link"> Contact </a>
+            <Link to="contact" smooth={true} duration={500} offset={-50}className="header__link"> Contact </Link>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont"  onClick={hamburgerMenu}>

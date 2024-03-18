@@ -36,7 +36,7 @@ padding: 2rem;
     
 }
 .hero-content h2{
-    color: #ffff00;
+    color: #fff;
     font-size: 22px;
     font-weight: 600;
     font-family: sans-serif;
@@ -92,9 +92,12 @@ background-color: #fff;
     padding: 10px;
 
 border-radius: 50%;
+transition: transform 0.3s ease; 
+
 }
 .hero-icon:hover{
 color: #000;
+transform: scale(1.2);
 }
 
 .wave {
@@ -139,10 +142,7 @@ color: #000;
 border-radius: 0
 ;
     }
-    .hero-content h2{
-        font-size: 28px;
-        color: #3d3d3d;
-    }
+   
     .hero-content h1{
         font-size: 36px;
     }

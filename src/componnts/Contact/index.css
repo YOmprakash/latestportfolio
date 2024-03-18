@@ -1,60 +1,57 @@
-.contact-section {
-    padding: 2rem;
- 
- 
-    background-color: #EA445A;
-   
+.contact-container {
+  display: flex;
+  height: 100%;
+  padding: 3rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+  background-color: #ccf381;
+}
 
-  }
-  .contact-card-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .contact-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .form-group {
-    margin-bottom: 1rem;
-    max-width: 500px;
-  }
-  
+.contact-container h1 {
+  font-size: 2rem;
+  color: #2c2c2c; /* darker text for better contrast */
+  font-family: sans-serif;
+  font-weight: 900;
+  text-align: center;
+  border-bottom: 1px solid;
+}
 
-  .form-group input,
-  .form-group textarea {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    border: 2px solid #74F0ED;
-    outline: none;
-    border-radius: 3px;
-    font-size: 16px;
-  }
-  
-  .form-group textarea {
-    height: 100px;
-  }
-  
-  .button {
-    background-color: transparent;
-  color: #fff;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 30px;
+}
+
+.form-input {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #2c2c2c; /* darker border for better contrast */
+}
+
+.button {
   padding: 10px 20px;
-  border-radius: 15px;
-  border: #fff solid 1px;
-  cursor: pointer;
-  
+  align-self: center;
+ 
+  color: #4831d4;
+  border: 2px solid #4831d4;
   outline: none;
-  }
-  
-  .button:hover {
-    background-color: #0062cc;
-  }
-  @media  screen and (min-width: 768px) {
-    .contact-card-container {
-      flex-direction: row; /* Stack items vertically on mobile */
-      justify-content: center; /* Center items vertically */
-    }
-  }
+
+  cursor: pointer;
+  background: linear-gradient(to right, #4831d4 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+.button:hover{
+  background-position: left bottom;
+  color: #fff;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+}

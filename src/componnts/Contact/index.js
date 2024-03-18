@@ -1,69 +1,76 @@
-import React, { useState } from 'react';
-
-import { FaUser, FaEnvelope, FaPencilAlt } from 'react-icons/fa';
+import React, { useState ,useRef} from 'react';
+import emailjs from '@emailjs/browser';
 import './index.css'
 
 const Contact = () => {
+  const form = useRef();
   const [name, setName] = useState('');
   const [subject, setSubject] = useState('');
   const [description, setDescription] = useState('');
+ 
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // handle form submission here, e.g., send data to an API
-    console.log('Name:', name);
-    console.log('Subject:', subject);
-    console.log('Description:', description);
-    // reset form fields
-    setName('');
-    setSubject('');
-    setDescription('');
+   
+    emailjs
+    .sendForm('service_qp97t0w', 'template_eobtvhw', form.current, {
+      publicKey: 'rTfcb-OLlJEQ3giOt',
+    })
+    .then(
+      () => {
+        console.log('SUCCESS!');
+        alert('Your message has been sent successfully!');
+        setName('');
+        setSubject('');
+        setDescription('');
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+        alert('Failed to send message. Please try again later.');
+      },
+    );
   };
 
-  
-
   return (
-    <>
- <section id='contact' className="contact-section">
-      <h2>Get in touch</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <FaUser /> {/* user icon */}
+    <div id='contact' className='contact-container'>
+      <h1>Get in touch</h1>
+     
+     
+      <form onSubmit={handleSubmit} ref={form} className='contact-form'>
+        <div className='form-group'>
           <input
             type="text"
             placeholder='Name'
-            name="name"
+            name="user_name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            className='form-input'
           />
         </div>
-        <div className="form-group">
-          <FaEnvelope /> {/* envelope icon */}
-          <input
-            type="text"
-            placeholder='Subject'
-            name="subject"
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <FaPencilAlt /> {/* pencil icon */}
-          <textarea
-            placeholder='Description'
-            name="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            required
-            style={{ resize: 'none' }}
-          ></textarea>
-        </div>
+        <input
+          type="text"
+          placeholder='Subject'
+          name="user_subject"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+          required
+          className='form-input'
+        />
+        <textarea
+          placeholder='Description'
+          name="message" 
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          required
+          rows={6}
+          style={{ resize: 'none' }}
+          className='form-input'
+        ></textarea>
         <button type="submit" className='button'>Send Message</button>
       </form>
-    </section>
-    </>
+    </div>
   );
 };
 

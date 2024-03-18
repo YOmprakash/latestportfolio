@@ -51,6 +51,7 @@ text-decoration: none;
   font-family: sans-serif;
   color: #4831d4;
 font-weight: 400;
+cursor: pointer;
 
   
 }
@@ -60,6 +61,7 @@ font-weight: 400;
   font-weight: 600;
   padding-bottom: 5px;
   border-bottom: 3px solid #4831d4;
+
 
 }
 
